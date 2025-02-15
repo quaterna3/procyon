@@ -1,0 +1,4 @@
+if(isLoggedIn()){
+  addTimetable();
+  setScrollUnlocks();
+}

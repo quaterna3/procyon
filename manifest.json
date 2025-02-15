@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "Procyon",
+  "version": "1.0",
+
+  "description": "Add a table of schedule at the bottom of PandA pages",
+
+  "icons":{
+    "48": "icons/procyon-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://panda.ecs.kyoto-u.ac.jp/*"],
+      "css": [
+        "src/features/timetable/timetable.css",
+        "src/features/timetable/timetable-dark-theme.css",
+        "src/features/timetable/timetable-light-theme.css",
+        "src/features/timetable/course-entry.css",
+        "src/features/timetable/course-entry-dark-theme.css",
+        "src/features/timetable/course-entry-light-theme.css",
+        "src/features/timetable/course-site-menu.css",
+        "src/features/timetable/course-site-menu-dark-theme.css",
+        "src/features/timetable/course-site-menu-light-theme.css",
+        "src/features/login-button-cursor/login-button-cursor.css"
+      ],
+      "js": [
+        "src/classes/course.js",
+        "src/classes/color-rgb.js",
+        "src/features/timetable/assignments.js",
+        "src/features/timetable/timetable.js",
+        "src/features/timetable/course-entry.js",
+        "src/features/timetable/course-site-menu.js",
+        "src/features/unlock-scroll/unlock-scroll.js",
+        "src/login-status.js",
+        "src/main.js"
+      ]
+    }
+  ]
+}

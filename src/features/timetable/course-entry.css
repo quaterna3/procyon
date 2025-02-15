@@ -1,0 +1,66 @@
+div.entry{
+  position: relative;
+  display: block;
+  padding: 3px 10px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+a.link{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+span.title{
+  display: inline-block;
+  width: 90%;
+  padding: 3px auto;
+}
+
+div.course-entry{
+  width: 90%;
+  opacity: 1.0;
+}
+
+div.course-entry::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  border-radius: 10px;
+  opacity: 0;
+  transition: .3s;
+}
+
+div.course-entry:hover::before{
+  content: "";
+  opacity: 0.2;
+}
+
+button.menu-show-button{
+  position: absolute;
+  padding: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+}
+
+button.menu-show-button:hover{
+  background: none;
+  border: none;
+}
+
+button.menu-show-button:focus{
+  background: none;
+}
+
+div.course-entry:has(ul:hover)::before{
+  content: "";
+  opacity: 0;
+}

@@ -1,0 +1,11 @@
+.sakaiUserTheme-dark div.course-entry{
+  border: 1px solid #a0a0a0;
+}
+
+.sakaiUserTheme-dark div.course-entry::before{
+  background: #ffffff;
+}
+
+.sakaiUserTheme-dark div.course-entry-default-colors{
+  background: #404040;
+}

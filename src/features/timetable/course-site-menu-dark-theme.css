@@ -1,0 +1,8 @@
+.sakaiUserTheme-dark div.site-menu-option-entry{
+  background: #606060;
+  border: 1px solid #808080;
+}
+
+.sakaiUserTheme-dark div.site-menu-option-entry::before{
+  background: #ffffff;
+}

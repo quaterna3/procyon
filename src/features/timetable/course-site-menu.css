@@ -1,0 +1,46 @@
+ul#site-menu{
+  width: 100%;
+  left: 0;
+  position: absolute;
+  list-style-type: none;
+  padding: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+div.site-menu-option-entry{
+  position: relative;
+  margin: 0;
+  width: 100%;
+  border-radius: 0;
+}
+
+div.site-menu-option-entry::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: .3s;
+}
+
+div.site-menu-option-entry:hover::before{
+  content: "";
+  opacity: 0.2;
+}
+
+span.site-menu-option-title{
+  position: relative;
+  width: 80%;
+  left: 20%;
+}
+
+span.site-menu-option-icon{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15%;
+  background: none;
+}

@@ -1,0 +1,15 @@
+.sakaiUserTheme-light th.header-corner,.sakaiUserTheme-light th.header-day,.sakaiUserTheme-light th.header-period{
+  background: #ffffff;
+}
+
+.sakaiUserTheme-light td.nonempty-slot{
+  background: #e0e0e0;
+}
+
+.sakaiUserTheme-light td.empty-slot{
+  background: #ffffff;
+}
+
+.sakaiUserTheme-light th.cell,.sakaiUserTheme-light td.cell{
+  border: 1px solid #a0a0a0;
+}

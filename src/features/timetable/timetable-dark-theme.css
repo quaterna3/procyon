@@ -1,0 +1,15 @@
+.sakaiUserTheme-dark th.header-corner,.sakaiUserTheme-dark th.header-day,.sakaiUserTheme-dark th.header-period{
+  background: #202020;
+}
+
+.sakaiUserTheme-dark td.nonempty-slot{
+  background: #303030;
+}
+
+.sakaiUserTheme-dark td.empty-slot{
+  background: #202020;
+}
+
+.sakaiUserTheme-dark th.cell,.sakaiUserTheme-dark td.cell{
+  border: 1px solid #606060;
+}

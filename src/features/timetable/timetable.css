@@ -1,0 +1,43 @@
+div.table-details-div{
+  width: 100%;
+  margin: 0 16px;
+}
+
+details.table-details{
+  padding: 16px 0;
+}
+
+details.table-details summary.table-details-summary::before{
+  font-family: FontAwesome;
+  content: "\f067";
+  cursor: pointer;
+}
+
+details.table-details[open] summary.table-details-summary::before{
+  content: "\f068";
+}
+
+summary.table-details-summary{
+  font-size: 20px;
+}
+
+div.timetable-div{
+  width: 100%;
+  display: block;
+  padding: 100px 0;
+}
+
+table.timetable{
+  border-collapse: collapse;
+  border: none;
+  margin: 0 auto;
+}
+
+th.header-corner,th.header-day,th.header-period{
+  width: 20px;
+}
+
+td.timetable-slot{
+  width: 200px;
+  height: 100px;
+}

@@ -28,8 +28,6 @@ function createCourseEntry(course, isSiteMenuCloseEventAddNeeded){
 
 }
 
-/* assignmentのget処理がassignments.jsに書かれていないのはunconventionalであまりよくない */
-
 function promiseEntryColoring(course, courseEntry){
 
   getAssignmentsAndQuizzes(course).then(async function(responses){

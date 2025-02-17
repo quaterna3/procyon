@@ -101,10 +101,6 @@ function getCourses(){
     }
   }
 
-  /* code here */
-
-  /* -------------------------------------------------- */
-
   const courseEntries = document.getElementsByClassName("fav-sites-entry");
   for(let entryNumber = 0; entryNumber < courseEntries.length; entryNumber++){
     const courseEntryLink = courseEntries[entryNumber].getElementsByClassName("fav-title")[0].children[0];

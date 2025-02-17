@@ -1,21 +1,21 @@
 function createCourseEntry(course, isSiteMenuCloseEventAddNeeded){
   
   const courseEntry = document.createElement("div");
-  courseEntry.classList.add("entry", "course-entry");
+  courseEntry.classList.add("procyon-added", "entry", "course-entry");
 
   const courseTitle = document.createElement("span");
-  courseTitle.classList.add("title", "course-title");
+  courseTitle.classList.add("procyon-added", "title", "course-title");
   courseTitle.textContent = course.title;
   promiseEntryColoring(course, courseEntry);
 
   const courseLink = document.createElement("a");
-  courseLink.classList.add("link", "course-link");
+  courseLink.classList.add("procyon-added", "link", "course-link");
   courseLink.setAttribute("href", course.url);
 
   const siteMenuShowButton = document.createElement("button");
-  siteMenuShowButton.classList.add("menu-show-button");
+  siteMenuShowButton.classList.add("procyon-added", "menu-show-button");
   const siteMenuShowButtonIcon = document.createElement("div");
-  siteMenuShowButtonIcon.classList.add("fa", "fa-chevron-down");
+  siteMenuShowButtonIcon.classList.add("procyon-added", "fa", "fa-chevron-down");
   siteMenuShowButton.append(siteMenuShowButtonIcon);
 
   courseEntry.append(courseTitle, courseLink, siteMenuShowButton);

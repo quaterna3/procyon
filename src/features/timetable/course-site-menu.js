@@ -48,14 +48,14 @@ function createSiteMenu(siteMenuJSON){
     const menuOptionEntryWrapper = document.createElement("li");
 
     const menuOptionEntry = document.createElement("div");
-    menuOptionEntry.classList.add("entry", "site-menu-option-entry");
+    menuOptionEntry.classList.add("procyon-added", "entry", "site-menu-option-entry");
     const menuOptionLink = document.createElement("a");
-    menuOptionLink.classList.add("link", "site-menu-option-link");
+    menuOptionLink.classList.add("procyon-added", "link", "site-menu-option-link");
     menuOptionLink.setAttribute("href", siteMenuJSON[siteNumber].tools[0].url);
     const menuOptionIcon = document.createElement("span");
-    menuOptionIcon.classList.add("site-menu-option-icon", "icon-sakai--" + siteMenuJSON[siteNumber].tools[0].toolId.replace(/\./g, "-"));
+    menuOptionIcon.classList.add("procyon-added", "site-menu-option-icon", "icon-sakai--" + siteMenuJSON[siteNumber].tools[0].toolId.replace(/\./g, "-"));
     const menuOptionTitle = document.createElement("span");
-    menuOptionTitle.classList.add("title", "site-menu-option-title");
+    menuOptionTitle.classList.add("procyon-added", "title", "site-menu-option-title");
     menuOptionTitle.textContent = siteMenuJSON[siteNumber].title;
     menuOptionEntry.append(menuOptionIcon, menuOptionTitle, menuOptionLink);
     menuOptionEntryWrapper.append(menuOptionEntry);

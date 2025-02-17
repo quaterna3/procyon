@@ -11,11 +11,11 @@ function createTable(courses){
   const timetableDiv = document.createElement("div");
   const timetable = document.createElement("table");
   
-  timetableDetailsDiv.classList.add("table-details-div");
-  timetableDetails.classList.add("table-details");
-  detailsSummary.classList.add("table-details-summary");
-  timetableDiv.classList.add("timetable-div");
-  timetable.classList.add("timetable");
+  timetableDetailsDiv.classList.add("procyon-added", "table-details-div");
+  timetableDetails.classList.add("procyon-added", "table-details");
+  detailsSummary.classList.add("procyon-added", "table-details-summary");
+  timetableDiv.classList.add("procyon-added", "timetable-div");
+  timetable.classList.add("procyon-added", "timetable");
 
   /* for debugging */
   timetableDetailsDiv.id = "table-details-div";
@@ -25,27 +25,28 @@ function createTable(courses){
   for(let period = 0; period <= 5; period++){
   
     const tr = document.createElement("tr");
+    tr.classList.add("procyon-added");
   
     for(let day = 0; day <= 5; day++){
   
       if(period === 0 && day === 0){
         const th = document.createElement("th");
         th.textContent = "";
-        th.classList.add("header-corner", "cell");
+        th.classList.add("procyon-added", "header-corner", "cell");
         tr.appendChild(th);
       }
   
       if(period === 0 && day >= 1){
         const th = document.createElement("th");
         th.textContent = daysList[day];
-        th.classList.add("header-day", "cell");
+        th.classList.add("procyon-added", "header-day", "cell");
         tr.appendChild(th);
       }
   
       if(period >= 1 && day === 0){
         const th = document.createElement("th");
         th.textContent = period;
-        th.classList.add("header-period", "cell");
+        th.classList.add("procyon-added", "header-period", "cell");
         tr.appendChild(th);
       }
   
@@ -53,7 +54,7 @@ function createTable(courses){
   
         const td = document.createElement("td");
         td.id = daysList[day] + period;
-        td.classList.add("cell", "timetable-slot");
+        td.classList.add("procyon-added", "cell", "timetable-slot");
 
         if(courses[daysList[day]][period].length > 0){
           td.classList.add("nonempty-slot");

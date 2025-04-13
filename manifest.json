@@ -36,5 +36,10 @@
         "src/main.js"
       ]
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{e795a162-f112-46c2-9cbf-bd6384f425d4}"
+    }
+  }
 }

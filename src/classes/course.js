@@ -86,6 +86,8 @@ class Course{
       case "５":
         period = 5;
         break;
+      default:
+        return false;
     }
 
     const semesterWithYear = new SemesterWithYear(year, semesterWithoutYear);
